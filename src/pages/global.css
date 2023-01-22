@@ -39,6 +39,7 @@
   justify-content: center;
   padding: 30px 0px;
   margin-bottom: 10px;
+  gap: 10px;
 }
 
 .container-fav-movies h1 {

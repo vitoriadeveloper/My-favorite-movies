@@ -6,11 +6,17 @@
     text-align: center;
     width: 30%;
     padding: 20px 0px;
-    border: 1px solid blue;
+    background-color: #2d29ff0f;
+    border-radius: 10px;
+}
+
+.container-fav-movies:hover {
+    transform: scale(0.9);
+    transition: all 0.3s;
 }
 .container-fav-movies img {
-    width: 250px;
-    height: 300px;
+    width: 150px;
+    height: 200px;
     cursor: pointer;
 }
 

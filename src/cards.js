@@ -8,6 +8,8 @@ import PerdidoEmMarte from './assets/perdido-em-marte.jpg';
 import FantasticaFabricaChocolate from './assets/a-fantastica-fabrica-chocolate.jpg';
 import Coringa from './assets/joker.jpg';
 import Parasita from './assets/parasita.jpg';
+import AsBranquelas from './assets/as-branquelas.jpg';
+import Titanic from './assets/titanic.jpg';
 
 const cards = [
     {id: 1, name: 'Avatar', image: Avatar, diretor: 'James Cameron', categoria: 'Ficcao Cientifica', pais: 'Estados Unidos', ano:  2009},
@@ -20,6 +22,8 @@ const cards = [
     {id: 8, name: 'A Fantástica Fábrica de Chocolate', image: FantasticaFabricaChocolate, diretor: 'Tim Burton', categoria: 'Fantasia', pais:'Estados Unidos', ano: 2005},
     {id: 9, name: 'Joker', image: Coringa, diretor: 'Todd Phillips', categoria: 'Suspense Psicologico', pais:'Estados Unidos', ano: 2019},
     {id: 10, name: 'Parasita', image: Parasita, diretor: 'Bong Joon-ho', categoria: 'Suspense', pais:'Coreia do Sul', ano: 2019},
+    {id: 11, name: 'As Branquelas', image: AsBranquelas, diretor: 'Keenen Ivory Wayans', categoria: 'Comedia', pais:'Estados Unidos', ano: 2004},
+    {id: 12, name: 'Titanic', image: Titanic, diretor: 'James Cameron', categoria: 'Drama', pais:'Reino Unido', ano: 1998}
 ];
 
 export default cards;

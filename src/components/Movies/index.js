@@ -6,9 +6,9 @@ export default function Movies({item}) {
       <div className='container-fav-movies'>
         <img src={item.image}/>
         <h1>{item.name}</h1>
-        <span>Categoria: {item.categoria}</span>
-        <span>Diretor: {item.diretor}</span>
-        <span> Ano de Lançamento: {item.ano}</span> 
+        <span><strong>Categoria</strong>: {item.categoria}</span>
+        <span><strong>Diretor</strong>: {item.diretor}</span>
+        <span> <strong>Ano de Lançamento</strong>: {item.ano}</span> 
       </div>
     );
   }
