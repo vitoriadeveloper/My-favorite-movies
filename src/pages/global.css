@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@700&display=swap");
+:root {
+  --font-primary: "Roboto", sans-serif;
+  --font-secondary: "Mulish", sans-serif;
+  --font-color: #131e30;
+  --background-primary: #ffffff;
+  --font-color-secondary: #2e29ff;
+  --background-secondary: #eff5ff;
+  --font-size: 16px;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.container-aside h1 {
+  font-family: var(--font-primary);
+}
+
+.container-aside p {
+  font-size: var(--font-size);
+  font-family: var(--font-primary);
+}
+
+.container-aside button {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.container-movies {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px 0px;
+  margin-bottom: 10px;
+}
+
+.container-fav-movies h1 {
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.container-fav-movies span {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 16px;
+}

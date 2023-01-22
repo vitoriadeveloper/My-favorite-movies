@@ -1,0 +1,19 @@
+
+.container-fav-movies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    padding: 20px 0px;
+    border: 1px solid blue;
+}
+.container-fav-movies img {
+    width: 250px;
+    height: 300px;
+    cursor: pointer;
+}
+
+.container-fav-movies span {
+    line-height: 35px;
+}

@@ -1,0 +1,67 @@
+:root {
+  --font-color: #fafafa;
+  --background-primary: #ffffff;
+  --font-secondary: #1abc9c;
+  --background-secondary: rgba(0, 0, 0, 0.822);
+  --font-size: 16px;
+}
+.container-aside {
+  position: relative;
+  box-sizing: border-box;
+  width: 250px;
+  background-color: var(--background-secondary);
+  display: flex;
+  padding: 25px 0px;
+}
+
+.container-aside h1 {
+  color: var(--font-primary);
+  font-size: 25px;
+  font-weight: bold;
+}
+.column-aside {
+  width: 100%;
+  display: flex;
+  color: var(--font-color);
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+aside img {
+  position: relative;
+  left: 40px;
+}
+
+section {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+section p {
+  cursor: pointer;
+  font-weight: 400px;
+}
+
+section p:hover {
+  color: var(--font-secondary);
+  transition: all 0.3s;
+  transform: scale(1.1);
+}
+
+button {
+  all: none;
+  padding: 10px 50px;
+  border: 1px solid var(--font-secondary);
+  background-color: var(--background-primary);
+  color: var(--font-secondary);
+  transition: all 0.3s;
+  transform: scale(1.1);
+}
+
+button:hover {
+  border: 1px solid var(--background-primary);
+  background-color: var(--font-secondary);
+  color: var(--background-primary);
+}
