@@ -4,19 +4,40 @@ import "../../pages/global.css";
 import { useState } from "react";
 
 export default function Filter({ handleSortMovies, handleFilterMovies }) {
-  const [hidden, setHidden] = useState("hidden");
+  const [hidden, setHidden] = useState(true);
 
   function handleFilter() {
-    setHidden("");
+    setHidden(!hidden);
   }
 
   return (
     <div className="filter">
       <img src={filter} alt="Filtro" onClick={() => handleFilter()} />
-      <div className={`filtered ${hidden}`}>
-        <span onClick={() => handleSortMovies("nome")}>Nome</span>
-        <span onClick={() => handleSortMovies("ano")}>Ano de Lançamento</span>
-        <span onClick={() => handleSortMovies("pais")}>País</span>
+      <div className={`filtered ${hidden && "hidden"}`}>
+        <span
+          onClick={() => {
+            handleSortMovies("nome");
+            handleFilter();
+          }}
+        >
+          Nome
+        </span>
+        <span
+          onClick={() => {
+            handleSortMovies("ano");
+            handleFilter();
+          }}
+        >
+          Ano de Lançamento
+        </span>
+        <span
+          onClick={() => {
+            handleSortMovies("pais");
+            handleFilter();
+          }}
+        >
+          País
+        </span>
       </div>
     </div>
   );

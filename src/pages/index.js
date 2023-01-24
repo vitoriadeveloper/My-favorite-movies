@@ -2,7 +2,7 @@ import "./global.css";
 import Aside from "../components/Aside";
 import Movies from "../components/Movies";
 import cards from "../cards";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Filter from "../components/Filter";
 
 function Main() {
@@ -18,12 +18,13 @@ function Main() {
       setFilterMovies(moviesFiltered);
     }
   }
-
   function handleSortMovies(typeOfFilter) {
-    const order = movies.sort(function (a, b) {
+    const newMovies = movies;
+    const order = newMovies.sort(function (a, b) {
       if (typeOfFilter === "nome") {
         return a.nome.localeCompare(b.nome);
       }
+      
       if (typeOfFilter === "pais") {
         return a.pais.localeCompare(b.pais);
       }
@@ -34,7 +35,10 @@ function Main() {
     });
     setFilterMovies(order);
   }
-
+  useEffect(()=>{
+    console.log('filterMovies', filterMovies);
+    console.log('movies', movies);
+}, [handleSortMovies])
   return (
     <div className="container">
       <Aside handleFilterMovies={handleFilterMovies} />
