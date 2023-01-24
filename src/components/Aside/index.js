@@ -1,8 +1,8 @@
-import './styles.css'
-import '../../pages/global.css'
-import Category from '../../assets/category.svg'
+import "./styles.css";
+import "../../pages/global.css";
+import Category from "../../assets/category.svg";
 
-function Aside() {
+function Aside({ handleFilterMovies }) {
   return (
     <div className="container-aside">
       <div className="column-aside">
@@ -12,15 +12,18 @@ function Aside() {
             <h1>Categorias</h1>
           </aside>
           <section className="movies-column">
-            <p>Comédia</p>
-            <p>Ficção Científica</p>
-            <p>Fantasia</p>
-            <p>Suspense</p>
-            <p>Drama</p>
+            <p onClick={() => handleFilterMovies("Comedia")}>Comédia</p>
+            <p onClick={() => handleFilterMovies("Ficcao Cientifica")}>
+              Ficção Científica
+            </p>
+            <p onClick={() => handleFilterMovies("Fantasia")}>Fantasia</p>
+            <p onClick={() => handleFilterMovies("Suspense")}>Suspense</p>
+            <p onClick={() => handleFilterMovies("Drama")}>Drama</p>
           </section>
-         
         </div>
-        <button className="btn-all">Todos</button>
+        <button className="btn-all" onClick={() => handleFilterMovies(null)}>
+          Todos
+        </button>
       </div>
     </div>
   );
