@@ -37,7 +37,7 @@ function Main() {
 
   return (
     <div className="container">
-      <Aside handleFilterMovies = {handleFilterMovies} />
+      <Aside handleFilterMovies={handleFilterMovies} />
       <div className="container-movies">
         {filterMovies.map((item) => (
           <Movies key={item.id} item={item} />
