@@ -1,26 +1,24 @@
-
 .container-fav-movies {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 250px;
-    max-width: 100%;
-    padding: 20px 0px;
-    background-color: #2d29ff0f;
-    border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 250px;
+  max-width: 100%;
+  padding: 20px 0px;
+  background-color: #2d29ff0f;
+  border-radius: 10px;
 }
 
 .container-fav-movies:hover {
-    transform: scale(0.9);
-    transition: all 0.3s;
+  transform: scale(0.9);
+  transition: all 0.3s;
 }
 .container-fav-movies img {
-    width: 150px;
-    height: 200px;
-    cursor: pointer;
+  width: 150px;
+  height: 200px;
 }
 
 .container-fav-movies span {
-    line-height: 35px;
+  line-height: 35px;
 }
