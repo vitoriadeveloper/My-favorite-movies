@@ -9,6 +9,7 @@ export default function Filter({ handleSortMovies, handleFilterMovies }) {
   function handleFilter() {
     setHidden("");
   }
+
   return (
     <div className="filter">
       <img src={filter} alt="Filtro" onClick={() => handleFilter()} />
