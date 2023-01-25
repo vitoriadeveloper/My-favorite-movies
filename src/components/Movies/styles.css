@@ -17,6 +17,7 @@
 .container-fav-movies img {
   width: 150px;
   height: 200px;
+  cursor: pointer;
 }
 
 .container-fav-movies span {

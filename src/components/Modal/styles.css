@@ -1,0 +1,28 @@
+
+
+.container-modal {
+    width: 490px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    background-color: #fafafa;
+    border-radius: 10px;
+    padding: 0px 20px;
+}
+.modal-movie  {
+    width: 250px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .btn-close {
+    position: absolute;
+    top: 15px;
+    right: 300px;
+    cursor: pointer;
+  }
+
+ 
