@@ -54,11 +54,26 @@
   font-size: 16px;
 }
 
+.modal {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.34);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 @media screen and (max-width: 720px) {
   .container {
     flex-direction: column;
     text-align: center;
     align-items: center;
+  }
+  .modal {
+    display: none;
   }
   .container-aside {
     width: 100%;
@@ -74,13 +89,9 @@
   }
 }
 
-.modal {
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.34);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media screen and (max-width: 1300px){
+  .modal {
+    display: none;
+  }
+
 }
